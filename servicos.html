@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Clínica Saúde Maputo</title>
+    <meta name="description" content="Conheça todos os nossos serviços médicos e dentários. Preços transparentes e qualidade garantida em Maputo, Moçambique.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                        <i data-lucide="heart-pulse" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Clínica Saúde Maputo</h1>
+                        <p class="text-sm text-gray-600">Cuidamos de si</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors">Início</a>
+                    <a href="#servicos" class="text-blue-600 font-semibold">Serviços</a>
+                    <a href="index.html#equipa" class="text-gray-700 hover:text-blue-600 transition-colors">Equipa</a>
+                    <a href="index.html#contacto" class="text-gray-700 hover:text-blue-600 transition-colors">Contacto</a>
+                </nav>
+
+                <!-- Contact Info -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <div class="text-right">
+                        <p class="text-sm font-semibold text-gray-800">+258 21 123 456</p>
+                        <p class="text-xs text-gray-600">Urgências 24h</p>
+                    </div>
+                    <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Marcar Consulta
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <nav class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors">Início</a>
+                    <a href="#servicos" class="text-blue-600 font-semibold">Serviços</a>
+                    <a href="index.html#equipa" class="text-gray-700 hover:text-blue-600 transition-colors">Equipa</a>
+                    <a href="index.html#contacto" class="text-gray-700 hover:text-blue-600 transition-colors">Contacto</a>
+                    <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors inline-block text-center">
+                        Marcar Consulta
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-20 bg-gradient-to-br from-blue-50 to-green-50">
+        <div class="container mx-auto px-4 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    Os Nossos <span class="text-blue-600">Serviços</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Oferecemos uma gama completa de serviços médicos e dentários com preços transparentes 
+                    e qualidade garantida para toda a família.
+                </p>
+                <a href="marcacao.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                    Marcar Consulta Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Detalhados -->
+    <section id="servicos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Medicina Geral -->
+            <div class="mb-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Medicina Geral</h2>
+                    <p class="text-lg text-gray-600">Cuidados médicos abrangentes para toda a família</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="stethoscope" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Consulta Geral</h3>
+                        <p class="text-gray-600 mb-4">Avaliação médica completa, diagnóstico e tratamento de doenças comuns.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">800 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="activity" class="w-8 h-8 text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Check-up Completo</h3>
+                        <p class="text-gray-600 mb-4">Exame médico preventivo com análises laboratoriais básicas.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">1500 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="thermometer" class="w-8 h-8 text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Consulta de Urgência</h3>
+                        <p class="text-gray-600 mb-4">Atendimento médico urgente disponível 24 horas por dia.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">1200 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medicina Dentária -->
+            <div class="mb-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Medicina Dentária</h2>
+                    <p class="text-lg text-gray-600">Cuidados dentários completos para um sorriso saudável</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="smile" class="w-8 h-8 text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Consulta Dentária</h3>
+                        <p class="text-gray-600 mb-4">Exame oral completo, diagnóstico e plano de tratamento.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">600 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="sparkles" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Limpeza Dentária</h3>
+                        <p class="text-gray-600 mb-4">Destartarização e polimento para manter os dentes saudáveis.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">800 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="zap" class="w-8 h-8 text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Obturação</h3>
+                        <p class="text-gray-600 mb-4">Tratamento de cáries com materiais de alta qualidade.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">1200 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="crown" class="w-8 h-8 text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Implante Dentário</h3>
+                        <p class="text-gray-600 mb-4">Substituição de dentes perdidos com implantes de titânio.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">8000 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="align-center" class="w-8 h-8 text-orange-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Ortodontia</h3>
+                        <p class="text-gray-600 mb-4">Correção do alinhamento dentário com aparelhos modernos.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">15000 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="star" class="w-8 h-8 text-pink-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Branqueamento</h3>
+                        <p class="text-gray-600 mb-4">Clareamento dentário profissional para um sorriso brilhante.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">2500 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Especialidades -->
+            <div class="mb-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Especialidades Médicas</h2>
+                    <p class="text-lg text-gray-600">Cuidados especializados com médicos experientes</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="heart" class="w-8 h-8 text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Cardiologia</h3>
+                        <p class="text-gray-600 mb-4">Diagnóstico e tratamento de doenças cardiovasculares.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">1200 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="baby" class="w-8 h-8 text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Pediatria</h3>
+                        <p class="text-gray-600 mb-4">Cuidados médicos especializados para bebés e crianças.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">900 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="eye" class="w-8 h-8 text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Oftalmologia</h3>
+                        <p class="text-gray-600 mb-4">Exames oftalmológicos e tratamento de doenças oculares.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">1000 MZN</span>
+                            <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                                Marcar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horários e Informações -->
+            <div class="bg-blue-50 rounded-2xl p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Horários de Funcionamento</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between">
+                                <span class="font-semibold text-gray-700">Segunda a Sexta:</span>
+                                <span class="text-gray-600">07:00 - 19:00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-semibold text-gray-700">Sábado:</span>
+                                <span class="text-gray-600">08:00 - 16:00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-semibold text-gray-700">Domingo:</span>
+                                <span class="text-gray-600">Urgências 24h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-semibold text-gray-700">Urgências:</span>
+                                <span class="text-gray-600">24 horas/dia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Informações Importantes</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start space-x-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-600 mt-0.5"></i>
+                                <span>Aceitamos seguros de saúde</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-600 mt-0.5"></i>
+                                <span>Pagamento em dinheiro ou cartão</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-600 mt-0.5"></i>
+                                <span>Estacionamento gratuito</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-600 mt-0.5"></i>
+                                <span>Instalações acessíveis</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-blue-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                Pronto para Cuidar da Sua Saúde?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Marque a sua consulta hoje mesmo e experimente o nosso atendimento de excelência
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="marcacao.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors font-semibold">
+                    Marcar Consulta Online
+                </a>
+                <a href="tel:+25821123456" class="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-semibold">
+                    Ligar Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo e Descrição -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                            <i data-lucide="heart-pulse" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Clínica Saúde Maputo</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm">
+                        Cuidados de saúde de excelência para toda a família, 
+                        com profissionais experientes e tecnologia moderna.
+                    </p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div>
+                    <h4 class="font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Início</a></li>
+                        <li><a href="#servicos" class="text-gray-300 hover:text-white transition-colors">Serviços</a></li>
+                        <li><a href="index.html#equipa" class="text-gray-300 hover:text-white transition-colors">Equipa</a></li>
+                        <li><a href="marcacao.html" class="text-gray-300 hover:text-white transition-colors">Marcar Consulta</a></li>
+                    </ul>
+                </div>
+
+                <!-- Serviços -->
+                <div>
+                    <h4 class="font-bold mb-4">Serviços</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#servicos" class="text-gray-300 hover:text-white transition-colors">Consultas Gerais</a></li>
+                        <li><a href="#servicos" class="text-gray-300 hover:text-white transition-colors">Medicina Dentária</a></li>
+                        <li><a href="#servicos" class="text-gray-300 hover:text-white transition-colors">Cardiologia</a></li>
+                        <li><a href="#servicos" class="text-gray-300 hover:text-white transition-colors">Pediatria</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <p>+258 21 123 456</p>
+                        <p>info@clinicasaudemaputo.co.mz</p>
+                        <p>Av. Julius Nyerere, Maputo</p>
+                    </div>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-300">
+                <p>&copy; 2024 Clínica Saúde Maputo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

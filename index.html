@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Saúde Maputo - Cuidados Médicos de Excelência</title>
+    <meta name="description" content="Clínica médica e dentária em Maputo, Moçambique. Serviços de qualidade com equipa especializada. Marque já a sua consulta.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                        <i data-lucide="heart-pulse" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Clínica Saúde Maputo</h1>
+                        <p class="text-sm text-gray-600">Cuidamos de si</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition-colors">Início</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-blue-600 transition-colors">Serviços</a>
+                    <a href="#equipa" class="text-gray-700 hover:text-blue-600 transition-colors">Equipa</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition-colors">Contacto</a>
+                    <a href="servicos.html" class="text-gray-700 hover:text-blue-600 transition-colors">Todos os Serviços</a>
+                </nav>
+
+                <!-- Contact Info -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <div class="text-right">
+                        <p class="text-sm font-semibold text-gray-800">+258 21 123 456</p>
+                        <p class="text-xs text-gray-600">Urgências 24h</p>
+                    </div>
+                    <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Marcar Consulta
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <nav class="flex flex-col space-y-4">
+                    <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition-colors">Início</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-blue-600 transition-colors">Serviços</a>
+                    <a href="#equipa" class="text-gray-700 hover:text-blue-600 transition-colors">Equipa</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition-colors">Contacto</a>
+                    <a href="servicos.html" class="text-gray-700 hover:text-blue-600 transition-colors">Todos os Serviços</a>
+                    <a href="marcacao.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors inline-block text-center">
+                        Marcar Consulta
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-20 bg-gradient-to-br from-blue-50 to-green-50">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                        Cuidados de Saúde de <span class="text-blue-600">Excelência</span> em Maputo
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Na Clínica Saúde Maputo, oferecemos serviços médicos e dentários de qualidade superior, 
+                        com uma equipa experiente e tecnologia moderna para cuidar de si e da sua família.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="marcacao.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors text-center font-semibold">
+                            Marcar Consulta Agora
+                        </a>
+                        <a href="#servicos" class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white transition-colors text-center font-semibold">
+                            Ver Serviços
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="/placeholder.svg?height=500&width=600" alt="Clínica Saúde Maputo" class="rounded-lg shadow-xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                <i data-lucide="users" class="w-6 h-6 text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-800">5000+</p>
+                                <p class="text-sm text-gray-600">Pacientes Satisfeitos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços em Destaque -->
+    <section id="servicos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    Os Nossos Serviços
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Oferecemos uma gama completa de serviços médicos e dentários para toda a família
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="stethoscope" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Consultas Gerais</h3>
+                    <p class="text-gray-600 mb-6">
+                        Consultas médicas gerais com diagnóstico completo e acompanhamento personalizado.
+                    </p>
+                    <p class="text-blue-600 font-semibold">A partir de 800 MZN</p>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="smile" class="w-8 h-8 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Medicina Dentária</h3>
+                    <p class="text-gray-600 mb-6">
+                        Tratamentos dentários completos, desde limpezas a implantes e ortodontia.
+                    </p>
+                    <p class="text-blue-600 font-semibold">A partir de 600 MZN</p>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="heart" class="w-8 h-8 text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Cardiologia</h3>
+                    <p class="text-gray-600 mb-6">
+                        Especialista em doenças cardiovasculares com equipamentos de última geração.
+                    </p>
+                    <p class="text-blue-600 font-semibold">A partir de 1200 MZN</p>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="baby" class="w-8 h-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Pediatria</h3>
+                    <p class="text-gray-600 mb-6">
+                        Cuidados especializados para bebés e crianças com ambiente acolhedor.
+                    </p>
+                    <p class="text-blue-600 font-semibold">A partir de 900 MZN</p>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="eye" class="w-8 h-8 text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Oftalmologia</h3>
+                    <p class="text-gray-600 mb-6">
+                        Exames oftalmológicos completos e tratamento de doenças oculares.
+                    </p>
+                    <p class="text-blue-600 font-semibold">A partir de 1000 MZN</p>
+                </div>
+
+                <!-- Serviço 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="w-8 h-8 text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Urgências 24h</h3>
+                    <p class="text-gray-600 mb-6">
+                        Atendimento de urgência disponível 24 horas por dia, todos os dias.
+                    </p>
+                    <p class="text-blue-600 font-semibold">Sempre disponível</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="servicos.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                    Ver Todos os Serviços
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                        Sobre a Clínica Saúde Maputo
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Há mais de 15 anos a servir a comunidade de Maputo, a nossa clínica nasceu do sonho 
+                        de oferecer cuidados de saúde de qualidade internacional aqui em Moçambique.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Combinamos a experiência de profissionais formados localmente e no estrangeiro 
+                        com equipamentos modernos e um ambiente acolhedor, porque acreditamos que cada 
+                        paciente merece o melhor cuidado possível.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-blue-600">15+</p>
+                            <p class="text-gray-600">Anos de Experiência</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-blue-600">12</p>
+                            <p class="text-gray-600">Especialidades</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="/placeholder.svg?height=400&width=500" alt="Interior da clínica" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipa Médica -->
+    <section id="equipa" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    A Nossa Equipa
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Profissionais experientes e dedicados ao seu bem-estar
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Médico 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Dr. António Machel" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Dr. António Machel</h3>
+                    <p class="text-blue-600 font-semibold mb-3">Clínico Geral</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Formado pela Universidade Eduardo Mondlane, com especialização em Portugal. 
+                        20 anos de experiência em medicina familiar.
+                    </p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Medicina Geral</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Urgências</span>
+                    </div>
+                </div>
+
+                <!-- Médico 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Dra. Graça Mondlane" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Dra. Graça Mondlane</h3>
+                    <p class="text-blue-600 font-semibold mb-3">Cardiologista</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Especialista em cardiologia com formação no Brasil. Pioneira em 
+                        procedimentos cardíacos minimamente invasivos em Moçambique.
+                    </p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Cardiologia</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Ecocardiografia</span>
+                    </div>
+                </div>
+
+                <!-- Médico 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Dr. Carlos Nhaca" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Dr. Carlos Nhaca</h3>
+                    <p class="text-blue-600 font-semibold mb-3">Médico Dentista</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Especialista em implantologia e ortodontia. Formação na África do Sul 
+                        e constante atualização em técnicas modernas.
+                    </p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Implantes</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Ortodontia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testemunhos -->
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    O Que Dizem os Nossos Pacientes
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Histórias reais de quem confia em nós
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testemunho 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Maria Sitoe" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Maria Sitoe</h4>
+                            <p class="text-sm text-gray-600">Maputo</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Excelente atendimento! O Dr. António foi muito atencioso e explicou 
+                        tudo detalhadamente. A clínica é muito limpa e organizada. Recomendo!"
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+
+                <!-- Testemunho 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="/placeholder.svg?height=60&width=60" alt="João Matusse" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">João Matusse</h4>
+                            <p class="text-sm text-gray-600">Matola</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Fiz um implante dentário com o Dr. Carlos e ficou perfeito! 
+                        Processo sem dor e resultado excelente. Voltei a sorrir com confiança."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+
+                <!-- Testemunho 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Ana Chissano" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Chissano</h4>
+                            <p class="text-sm text-gray-600">Maputo</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "A Dra. Graça salvou a vida do meu marido! Diagnóstico rápido e 
+                        tratamento eficaz. Equipa muito profissional e humana."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização e Contacto -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    Visite-nos
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Estamos aqui para cuidar de si
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Informações de Contacto -->
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-2">Morada</h3>
+                                <p class="text-gray-600">
+                                    Avenida Julius Nyerere, 1234<br>
+                                    Bairro Central, Maputo<br>
+                                    Moçambique
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6 text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-2">Telefones</h3>
+                                <p class="text-gray-600">
+                                    Geral: +258 21 123 456<br>
+                                    Urgências: +258 84 567 890<br>
+                                    WhatsApp: +258 87 123 456
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="mail" class="w-6 h-6 text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-2">Email</h3>
+                                <p class="text-gray-600">
+                                    info@clinicasaudemaputo.co.mz<br>
+                                    urgencias@clinicasaudemaputo.co.mz
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6 text-orange-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-2">Horários</h3>
+                                <p class="text-gray-600">
+                                    Segunda a Sexta: 07:00 - 19:00<br>
+                                    Sábado: 08:00 - 16:00<br>
+                                    Domingo: Urgências 24h
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="marcacao.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold inline-block">
+                            Marcar Consulta Online
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mapa -->
+                <div>
+                    <div class="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
+                        <div class="text-center">
+                            <i data-lucide="map" class="w-16 h-16 text-gray-400 mx-auto mb-4"></i>
+                            <p class="text-gray-600">Mapa da localização</p>
+                            <p class="text-sm text-gray-500">Avenida Julius Nyerere, Maputo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo e Descrição -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                            <i data-lucide="heart-pulse" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Clínica Saúde Maputo</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm">
+                        Cuidados de saúde de excelência para toda a família, 
+                        com profissionais experientes e tecnologia moderna.
+                    </p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div>
+                    <h4 class="font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#inicio" class="text-gray-300 hover:text-white transition-colors">Início</a></li>
+                        <li><a href="servicos.html" class="text-gray-300 hover:text-white transition-colors">Serviços</a></li>
+                        <li><a href="#equipa" class="text-gray-300 hover:text-white transition-colors">Equipa</a></li>
+                        <li><a href="marcacao.html" class="text-gray-300 hover:text-white transition-colors">Marcar Consulta</a></li>
+                    </ul>
+                </div>
+
+                <!-- Serviços -->
+                <div>
+                    <h4 class="font-bold mb-4">Serviços</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="servicos.html" class="text-gray-300 hover:text-white transition-colors">Consultas Gerais</a></li>
+                        <li><a href="servicos.html" class="text-gray-300 hover:text-white transition-colors">Medicina Dentária</a></li>
+                        <li><a href="servicos.html" class="text-gray-300 hover:text-white transition-colors">Cardiologia</a></li>
+                        <li><a href="servicos.html" class="text-gray-300 hover:text-white transition-colors">Pediatria</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <p>+258 21 123 456</p>
+                        <p>info@clinicasaudemaputo.co.mz</p>
+                        <p>Av. Julius Nyerere, Maputo</p>
+                    </div>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-300">
+                <p>&copy; 2025 Clínica Saúde Maputo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
