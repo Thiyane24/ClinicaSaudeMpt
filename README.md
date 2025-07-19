@@ -1,7 +1,6 @@
 🏥 Clínica Saúde MPT - Concept Project
 A vision for modern healthcare scheduling
 
-https://img.shields.io/github/stars/Thiyane24/ClinicaSaudeMpt?style=social
 ✨ Conceptual Design - Not for Production Use
 
 🌟 The Vision Behind the Project
