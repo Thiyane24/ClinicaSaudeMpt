@@ -33,9 +33,6 @@ Technical Experiments
 
 🖱️ Micro-interaction designs
 
-https://screenshots/concept-preview.gif
-Sample interaction flow from the concept
-
 🚀 Exploring the Concept
 To view this design concept locally:
 
